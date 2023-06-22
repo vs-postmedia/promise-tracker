@@ -1,6 +1,6 @@
 {
-  "name": "govt-promise-tracker",
-  "homepage": "https://vs-postmedia.github.io/govt-promise-tracker/",
+  "name": "promise-tracker",
+  "homepage": "https://vs-postmedia.github.io/promise-tracker/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
