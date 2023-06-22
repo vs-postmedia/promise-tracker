@@ -1,0 +1,111 @@
+.ReactTable {
+	border: none;
+	max-height: 330px;
+}
+
+/* MAX_WIDTH */
+/*.ReactTable .rt-tbody,
+.ReactTable .rt-thead {
+	max-width: 650px !important;
+	min-width: auto !important;
+}*/
+.ReactTable .rt-tbody {
+	max-height: 450px;
+	overflow-y: auto;
+}
+
+/* PAGINATION */
+.ReactTable .-pagination {
+	border: none;
+}
+.ReactTable .-pagination .-previous,
+.ReactTable .-pagination .-next {
+	max-width: 100px;
+}
+.ReactTable .-pagination .-btn {
+	background: #FFFFFF;
+	border: 2px solid #6D6E70;
+	border-radius: 3px;
+	font-family: 'BentonSansCond-Bold', sans;
+}
+.ReactTable .-pagination .-btn:hover {
+	background: #6D6E70;
+	border: #FFFFFF;
+	color: #FFFFFF;
+}
+.ReactTable .-pagination,
+.ReactTable .rt-thead.-header {
+	box-shadow: none;
+}
+
+/* HEADER */
+.ReactTable .rt-thead .rt-th, 
+.ReactTable .rt-thead .rt-td {
+	border: none;
+}
+.ReactTable .rt-thead .rt-resizable-header-content {
+	font-family: 'BentonSansCond-Bold', Helvetica, sans;
+	font-weight: 800;
+}
+
+/* FILTER */
+.ReactTable .rt-thead.-filters {
+	border-bottom: 2px solid #6D6E70;
+}
+
+/* BODY */
+.ReactTable .rt-tbody .rt-tr-group {
+	border-bottom: none;
+	padding: 5px 0;
+}
+.ReactTable .rt-td {
+	font-family: 'BentonSansCond-Regular', Helvetica, sans;
+}
+.ReactTable .sub-row {
+	max-width: 500px;
+	padding: 0 1rem;
+}
+
+
+@media screen and (max-width: 450px) {
+	/* RESIZE */
+	.ReactTable .rt-tbody,
+	.ReactTable .rt-thead.-header,
+	.ReactTable .rt-thead.-filters {
+		min-width: 300px !important;
+	}
+
+	/* HEADER */
+	.ReactTable .rt-thead .rt-th:nth-child(1),
+	.ReactTable .rt-thead .rt-th:nth-child(3),
+	.ReactTable .rt-thead .rt-th:nth-child(4) {
+		display: none;
+	}
+	.ReactTable .rt-thead .rt-th:nth-child(5) {
+		text-align: left;
+	}
+
+	/* TABLE */
+	.ReactTable .rt-tbody {
+		max-height: 300px;
+	}
+	.ReactTable .rt-tbody .rt-tr-group {
+		border-bottom: 1px solid #A7A9AB;
+	}
+	.ReactTable .rt-tbody .rt-expandable {
+		display: none;
+	}
+	.ReactTable .rt-tbody .rt-tr {
+		display: block
+	}
+	.ReactTable .rt-td {
+		overflow: visible;
+		max-width: 300px !important;
+		min-width: 200px !important;
+		text-overflow: unset;
+		white-space: normal;
+	}
+	.ReactTable .rt-td:nth-child(4) {
+		display: none;
+	}
+}
